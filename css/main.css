@@ -1,11 +1,20 @@
 * {
     box-sizing: border-box;
 }
-
+h1, h2, h3, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: 'Inter', sans-serif;
     font-size: 24px;
     font-weight: 300;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
 }
 
 .container {
