@@ -5,21 +5,53 @@ h1, h2, h3, ul, li, a {
     margin: 0;
     padding: 0;
 }
-body {
-    font-family: 'Inter', sans-serif;
-    font-size: 24px;
-    font-weight: 300;
-}
 li {
     list-style: none;
 }
 a {
     text-decoration: none;
+    display: block;
 }
-
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: #131212;
+}
 .container {
     max-width: 940px;
     width: 100%;
     margin: 0 auto;
 }
-
+.header {
+    padding-top: 6px;
+}
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 19px 0 22px;
+    position: relative;
+}
+.header__nav-list {
+    display: flex;
+    align-items: center;
+}
+.header__nav-item:not(:last-child) {
+    margin-right: 25px;
+}
+.header__nav-link {
+    font-size: 13px;
+    color: #131212;
+    
+    transition: .3s ease;
+}
+.header__nav-link:hover {
+    color: #7A7272;
+}
+.header__nav-logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -67px;
+    margin-top: -28px;
+}
