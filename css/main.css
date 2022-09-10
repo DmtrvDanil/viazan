@@ -211,20 +211,23 @@ body {
 .Woolmark-icon {
     width: 158px;
 }
-.sertificate__content-btn {
-    margin-top: 22px;
+.btn {
     background: none;
-    padding: 11px 25px;
-    outline: none;
     border: 1px solid #131212;
     color: #131212;
     font-weight: 300;
     cursor: pointer;
     transition: .3s ease;
+    outline: none;
 }
-.sertificate__content-btn:hover {
+.btn:hover {
     border: 1px solid #7A7272;
     color: #7A7272;
+    box-shadow: 0 4px 15px #7A7272;
+}
+.sertificate__content-btn {
+    margin-top: 22px;
+    padding: 11px 25px;
 }
 .catalog2 {
     padding-bottom: 115px;
