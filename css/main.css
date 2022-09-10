@@ -252,3 +252,38 @@ body {
 .construct__look-text {
     color: #131212;
 }
+.catalog3  .catalo-item__price {
+    top: 22px;
+    left: 17px;
+}
+.catalog3 {
+    padding-bottom: 52px;
+}
+.care {
+    padding-bottom: 50px;
+}
+.cards-item {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.cards-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+.catalog-img {
+    transition: .3s ease;
+}
+.catalog-img:hover {
+    box-shadow: 0 4px 15px #7A7272;
+}
+.care__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 11px;
+}
+.care__text {
+    max-width: 630px;
+}
+.care__text:not(:last-child) {
+    margin-bottom: 15px;
+}
