@@ -31,6 +31,11 @@ body {
     border-bottom: 1px solid;
     display: inline-block;
 }
+.headingM {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+}
 .header {
     padding-top: 6px;
 }
@@ -223,4 +228,27 @@ body {
 }
 .catalog2 {
     padding-bottom: 115px;
+}
+.construct {
+    padding: 38px 0 52px;
+}
+.construct__wrapper-text {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.construct__look {
+    margin-top: 70px;
+    padding: 650px 56px 654px;
+    background-image: url('/img/looks.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.construct__look-text {
+    padding: 23px 49px 45px;
+    background-color: #fff;
+}
+.construct__look-text {
+    color: #131212;
 }
