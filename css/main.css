@@ -86,6 +86,7 @@ body {
     color: #131212;
     font-weight: 600;
     font-size: 15px;
+    display: inline-block;
 }
 .products-item__name {
     border-bottom: 1px solid ;
@@ -219,4 +220,7 @@ body {
 .sertificate__content-btn:hover {
     border: 1px solid #7A7272;
     color: #7A7272;
+}
+.catalog2 {
+    padding-bottom: 115px;
 }
