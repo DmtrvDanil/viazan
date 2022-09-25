@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -19,6 +19,9 @@
     <header class="header">
         <div class="container">
             <nav class="header__nav">
+                <button class="header__nav-burger" id="burger">
+                    <img src="./img/burger.svg" alt="menu">
+                </button>
                 <ul class="header__nav-list header__nav-left">
                     <li class="header__nav-item">
                         <a href="#" class="header__nav-link">Каталог</a>
@@ -57,12 +60,18 @@
                         </a>
                     </li>
                 </ul>
+                <button class="header__nav-burger">
+                    <img src="./img/icons/cart.svg" alt="cart">
+                </button>
             </nav>
         </div>
         <div class="mainScreen">
             <div class="container">
                 <div class="mainScreen__wrapper">
                     <div class="mainScreen__text">
+                        <h1 class="mainScreen__text-headingMob heading">
+                            Осень с Вязанью
+                        </h1>
                         <img src="img/heading.png" alt="Холода близко" class="mainScreen__text-heading heading-img">
                         <p class="mainScreen__text-descr">
                             Новая коллекция удобная, лакончиная
@@ -167,9 +176,11 @@
         <div class="container">
             <div class="banner__wrapper">
                 <p class="banner__content">
-                    Лекала, форма, цвет, вязка — мы выверяем всё,
-                    чтобы создавать вещи с идеальной посадкой,
-                    которые носятся годами.
+                    Если после примерки вещь вам
+                    не подошла, мы вернем деньги
+                    без уточнения причин
+                    или поможем выбрать другую
+                    модель в течение 21 дней со дня покупки.
                 </p>
             </div>
         </div>
@@ -302,7 +313,7 @@
     <section class="catalog catalog3">
         <div class="container">
             <h2 class="catalog__heading heading">
-                Для него
+                Детская коллекция
             </h2>
             <div class="catalog__wrapper">
                 <div href="#" class="catalog__wrapper-item item-1">
@@ -376,7 +387,7 @@
     </section>
     <section class="care">
         <div class="container">
-            <h2 class="headingM">
+            <h2 class="headingM construct__heading">
                 Как ухаживать?
             </h2>
             <div class="care__wrapper">
@@ -406,8 +417,8 @@
                 </div>
                 <div class="care__wrapper-cards">
                     <div href="#" class="cards-item">
-                        <img src="img/care/brush.png" alt="card" class="catalog-img" style="width: 233px;">
-                        <a href="#" class="mainScreen__products-item">
+                        <img src="img/care/brush.png" alt="card" class="catalog-img">
+                        <a href="#" class="mainScreen__products-item care-item">
                             <p class="products-item__name">
                                 Щетка для удаления катышек
                             </p>
@@ -417,8 +428,8 @@
                         </a>
                     </div>
                     <div href="#" class="cards-item">
-                        <img src="img/care/gel.png" alt="card" class="catalog-img" style="width: 233px">
-                        <a href="#" class="mainScreen__products-item">
+                        <img src="img/care/gel.png" alt="card" class="catalog-img">
+                        <a href="#" class="mainScreen__products-item care-item">
                             <p class="products-item__name">
                                 Гель для стирки вещей
                             </p>
@@ -531,6 +542,7 @@
             </p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
