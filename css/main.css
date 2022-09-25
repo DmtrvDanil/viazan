@@ -243,7 +243,7 @@ body {
 .construct__look {
     margin-top: 70px;
     padding: 650px 56px 654px;
-    background-image: url('/img/looks.png');
+    background-image: url('../img/looks.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
