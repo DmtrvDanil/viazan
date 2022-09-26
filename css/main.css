@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+html {
+    overflow-x: none;
+}
 h1, h2, h3, ul, li, a, p {
     margin: 0;
     padding: 0;
@@ -40,10 +43,12 @@ body {
     padding-top: 6px;
 }
 .header__nav {
-    display: flex;
-    justify-content: space-between;
     padding: 19px 0 22px;
     position: relative;
+}
+.header__nav-wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 .header__nav-list {
     display: flex;
@@ -386,6 +391,12 @@ body {
     }
 }
 @media (max-width: 500px) {
+    .header {
+        padding: 0;
+    }
+    .container {
+        padding: 0 10px;
+    }
     .catalog,
     .sertificate {
         padding: 15px 0 18px;
@@ -427,8 +438,7 @@ body {
         font-size: 40px;
         font-weight: 900;
     }
-    .mainScreen__products,
-    .header__nav-list {
+    .mainScreen__products {
         display: none;
     }
     .header__nav-burger {
@@ -576,12 +586,58 @@ body {
         margin-bottom: 12px;
     }
     .header__nav-link {
-        font-size: 10px;
+        font-size: 14px;
     }
     .footer__copiwriter {
         margin-top: 20px;
     }
     .footer__elem {
         display: none;
+    }
+    .header {
+        position: relative;
+    }
+    .header__nav {
+        padding-top: 60px;
+    }
+    .header__nav-wrapper-mob {
+        display: flex;
+        flex-direction: column;
+        justify-content: inherit;
+        position: absolute;
+        height: 100vh;
+        width: 70%;
+        left: -10px;
+        padding-left: 10px;
+    }
+    .header__nav-list-mob {
+        flex-direction: column;
+        align-items: inherit;
+    }
+    .header__nav-logo {
+        position: absolute;
+        top: -10px;
+        left: 100%;
+        margin-left: -134px;
+    }
+    .header__nav-right {
+        display: none;
+    }
+    .header__nav-left {
+        margin-top: 30px;
+        display: none;
+    }
+    .header__nav-left .header__nav-item:not(:last-child) {
+        margin-bottom: 8px;
+    }
+    .header__nav-cart {
+        max-width: 20px;
+        padding: 0;
+        right: 10px;
+        top: 30px;
+    }
+    .header__nav-burger {
+        position: absolute;
+        top: 50%;
     }
 }
