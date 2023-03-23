@@ -14,6 +14,7 @@ li {
 a {
     text-decoration: none;
     display: block;
+    cursor: pointer;
 }
 body {
     font-family: 'Inter', sans-serif;
@@ -681,4 +682,103 @@ body {
         position: absolute;
         top: 50%;
     }
+}
+
+.closeBtn-wrapper {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close__icon {
+    width: 20px;
+}
+
+.fabric {
+    background-color: rgba(205, 207, 207, 0.7);
+}
+
+.fabric__wrapper {
+    padding: 17px 22px 30px;
+}
+
+.mainScreen__fabric-text {
+    margin-top: 20px;
+}
+
+.fabricPromo {
+    margin-top: 33px;
+}
+
+.fabricPromo__wrapper {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.fabricPromo__imgCont > img {
+    max-width: 482px;
+}
+
+.fabricPromo__text {
+    max-width: 428px;
+    width: 100%;
+}
+
+.banner__content-text {
+    color: rgba(81, 34, 36, 1);
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 42.36px;
+}
+
+.login {
+    background-color: #B0BCD2;
+    border-radius: 35px;
+    max-width: 900px;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -450px;
+    padding: 80px 100px 68px;
+    z-index: 2;
+}
+
+.login__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+}
+.login__item {
+    margin-bottom: 20px;
+}
+
+.login__item-in {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    outline: none;
+}
+
+.login__heading {
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 67px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.loginBtn {
+    max-width: 200px;
+    width: 100%;
+    margin: 0 auto 20px;
+    height: 70px;
+    color: white;
 }

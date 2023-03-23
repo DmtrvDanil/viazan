@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Фабрика</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +13,6 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
     <header class="header" id="head">
         <div class="container">
@@ -23,33 +21,6 @@
                     <img src="./img/burger.svg" alt="menu">
                 </button>
                 <div class="header__nav-wrapper header__nav-wrapper-mob">
-
-                    <div class="login" id="loginPage" style="display: none;">
-                        <div class="container">
-                            <div class="closeBtn-wrapper">
-                                <span class="closeBtn" id="closeBtnLog">
-                                    <img src="img/close.png" alt="close" class="close__icon">
-                                </span>
-                            </div>
-                            <div class="login__wrapper">
-                                <h2 class="login__heading">
-                                    Стань частью большой семьи Вязань
-                                </h2>
-                                <input type="email" placeholder="e-mail" class="login__item login__item-in">
-                                <input type="password" placeholder="password" class="login__item login__item-in">
-                                <button class="loginBtn login__item btn">
-                                    Войти
-                                </button>
-                                <a class="log_help-link login__item">
-                                    Забыл пароль?
-                                </a>
-                                <a class="log_help-link login__item">
-                                    Зарегистрироваться
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
                     <ul class="header__nav-list header__nav-left header__nav-list-mob">
                         <li class="header__nav-item">
                             <a href="index.html" class="header__nav-link">Главная</a>
@@ -299,7 +270,7 @@
                             <a href="#care" class="header__nav-link">Уход</a>
                         </li>
                         <li class="header__nav-item">
-                            <a href="fabric.html" class="header__nav-link">Фабрика</a>
+                            <a href="#" class="header__nav-link">Фабрика</a>
                         </li>
                     </ul>
                     <div class="header__nav-logo">
@@ -319,8 +290,8 @@
                                 <img src="img/icons/loop.svg" alt="loop" class="icon-loop">
                             </a>
                         </li>
-                        <li class="header__nav-item">
-                            <a href="#" class="header__nav-link" id="login">Войти</a>
+                        <li class="header__nav-item" id="login">
+                            <a href="#" class="header__nav-link">Войти</a>
                         </li>
                         <li class="header__nav-item">
                             <a href="#" class="header__nav-link">
@@ -334,126 +305,48 @@
                 </button>
             </nav>
         </div>
-        <div class="mainScreen">
+        <div class="mainScreen fabric">
             <div class="container">
-                <div class="mainScreen__wrapper">
-                    <div class="mainScreen__text">
-                        <h1 class="mainScreen__text-headingMob heading">
-                            Осень с Вязанью
-                        </h1>
-                        <img src="img/heading.png" alt="Холода близко" class="mainScreen__text-heading heading-img">
-                        <p class="mainScreen__text-descr">
-                            Новая коллекция удобная, лакончиная
-                            и стильная. Мы позаботились о том,
-                            чтобы вы ощущали свободу, расслабленность и комфорт в каждом движении. Более того, наши
-                            изделия
-                            из шерсти мериноса согреют вас даже
-                            в сильный мороз.
+                <div class="mainScreen__wrapper fabric__wrapper">
+                    <div class="mainScreen__fabric">
+                        <img src="img/line.png" alt="lines">
+                        <p class="mainScreen__fabric-text">
+                            Швейное производство «Вязань» открылось в 2017 году. Уже 5 лет
+                            мы занимаемся пошивом женской, мужской и детской одежды. Наши конструкторы создают эффектные образы вне трендов. На свидании
+                            или в офисе, в кино или на прогулке, в путешествии или во время важной презентации — в Вязани вы чувствуете себя комфортно и уверенно всегда. 
                         </p>
                     </div>
-                    <div class="mainScreen__products">
-                        <a href="#" class="mainScreen__products-item">
-                            <p class="products-item__name">
-                                Шарф
-                            </p>
-                            <p class="products-item__price">
-                                1435₽
-                            </p>
-                        </a>
-                        <a href="#" class="mainScreen__products-item">
-                            <p class="products-item__name">
-                                Шапка-бини крупной вязки
-                            </p>
-                            <p class="products-item__price">
-                                1155₽
-                            </p>
-                        </a>
-                    </div>
-                    <img src="img/header.png" alt="model" class="mainScreen__pic-img">
                 </div>
             </div>
         </div>
     </header>
-    <section class="catalog">
+    
+    <div class="login" id="loginPage" style="display: none;">
         <div class="container">
-            <h2 class="catalog__heading heading">
-                Для нее
-            </h2>
-            <div class="catalog__wrapper">
-                <div href="#" class="catalog__wrapper-item item-1">
-                    <img src="img/cards1/1.png" alt="card" class="card-img">
-                    <a href="#" class="catalo-item__price mainScreen__products-item" style="color: #fff;">
-                        <p class="products-item__name">
-                            Свитер свободного кроя крупной вязки
-                        </p>
-                        <p class="products-item__price">
-                            3745₽
-                        </p>
-                    </a>
-                </div>
-                <div href="#" class="catalog__wrapper-item item-2">
-                    <img src="img/cards1/2.png" alt="card" class="card-img">
-                    <a href="#" class="catalo-item__price mainScreen__products-item">
-                        <p class="products-item__name">
-                            Шапка-бини крупной вязки
-                        </p>
-                        <p class="products-item__price">
-                            1155₽
-                        </p>
-                    </a>
-                </div>
-                <div href="#" class="catalog__wrapper-item item-3">
-                    <img src="img/cards1/3.png" alt="card" class="card-img">
-                </div>
-                <div href="#" class="catalog__wrapper-item item-4">
-                    <img src="img/cards1/4.png" alt="card" class="card-img">
-                    <a href="#" class="mainScreen__products-item">
-                        <p class="products-item__name">
-                            Свитер свободного кроя крупной вязки
-                        </p>
-                        <p class="products-item__price">
-                            3745₽
-                        </p>
-                    </a>
-                </div>
-                <div href="#" class="catalog__wrapper-item item-5">
-                    <img src="img/cards1/5.png" alt="card" class="card-img">
-                    <a href="#" class="mainScreen__products-item">
-                        <p class="products-item__name">
-                            Свитер свободного кроя крупной вязки
-                        </p>
-                        <p class="products-item__price">
-                            3745₽
-                        </p>
-                    </a>
-                </div>
-                <div class="catalog__wrapper-item item-6">
-                    <img src="img/cards1/6.png" alt="card" class="card-img">
-                    <a href="#" class="mainScreen__products-item">
-                        <p class="products-item__name">
-                            Свитер свободного кроя крупной вязки
-                        </p>
-                        <p class="products-item__price">
-                            3745₽
-                        </p>
-                    </a>
-                </div>
+            <div class="closeBtn-wrapper">
+                <span class="closeBtn" id="closeBtnLog">
+                    <img src="img/close.png" alt="close" class="close__icon">
+                </span>
+            </div>
+            <div class="login__wrapper">
+                <h2 class="login__heading">
+                    Стань частью большой семьи Вязань
+                </h2>
+                <input type="email" placeholder="e-mail" class="login__item login__item-in">
+                <input type="password" placeholder="password" class="login__item login__item-in">
+                <button class="loginBtn login__item btn">
+                    Войти
+                </button>
+                <a class="log_help-link login__item">
+                    Забыл пароль?
+                </a>
+                <a class="log_help-link login__item">
+                    Зарегистрироваться
+                </a>
             </div>
         </div>
-    </section>
-    <section class="banner">
-        <div class="container">
-            <div class="banner__wrapper">
-                <p class="banner__content">
-                    Если после примерки вещь вам
-                    не подошла, мы вернем деньги
-                    без уточнения причин
-                    или поможем выбрать другую
-                    модель в течение 21 дней со дня покупки.
-                </p>
-            </div>
-        </div>
-    </section>
+    </div>
+    
     <section class="sertificate">
         <div class="container">
             <div class="sertificate__wrapper">
@@ -474,257 +367,26 @@
             </div>
         </div>
     </section>
-    <section class="catalog catalog2">
-        <div class="container">
-            <h2 class="catalog__heading heading">
-                Для него
-            </h2>
-            <div class="catalog__wrapper">
-                <div href="#" class="catalog__wrapper-item item-1">
-                    <img src="img/cards2/1.png" alt="card" class="card-img">
-                </div>
-                <div href="#" class="catalog__wrapper-item item-2">
-                    <img src="img/cards2/2.png" alt="card" class="card-img">
-                    <a href="#" class="catalo-item__price mainScreen__products-item">
-                        <p class="products-item__name">
-                            Свитер с воротником-стойкой
-                        </p>
-                        <p class="products-item__price">
-                            3499₽
-                        </p>
-                    </a>
-                </div>
-                <div href="#" class="catalog__wrapper-item item-3">
-                    <img src="img/cards2/3.png" alt="card" class="card-img">
-                    <a href="#" class="catalo-item__price mainScreen__products-item">
-                        <p class="products-item__name">
-                            Шапка в рубчик
-                        </p>
-                        <p class="products-item__price">
-                            1155₽
-                        </p>
-                    </a>
-                </div>
-                <div href="#" class="catalog__wrapper-item item-4">
-                    <img src="img/cards2/4.png" alt="card" class="card-img">
-                    <a href="#" class="mainScreen__products-item">
-                        <p class="products-item__name">
-                            Жаккардовый свитер с узором из хлопка
-                        </p>
-                        <p class="products-item__price">
-                            3999₽
-                        </p>
-                    </a>
-                </div>
-                <div href="#" class="catalog__wrapper-item item-5">
-                    <img src="img/cards2/5.png" alt="card" class="card-img">
-                    <a href="#" class="mainScreen__products-item">
-                        <p class="products-item__name">
-                            Жилет с деталями из кружева кроше свитер с узором
-                        </p>
-                        <p class="products-item__price">
-                            3045₽
-                        </p>
-                    </a>
-                </div>
-                <div class="catalog__wrapper-item item-6">
-                    <img src="img/cards2/6.png" alt="card" class="card-img">
-                    <a href="#" class="mainScreen__products-item">
-                        <p class="products-item__name">
-                            Свитер с воротником-стойкой и молнией
-                        </p>
-                        <p class="products-item__price">
-                            4599₽
-                        </p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
     <section class="banner">
         <div class="container">
             <div class="banner__wrapper">
-                <p class="banner__content">
-                    Концепция Вязани многогранна, как и вы.
-                    С нами удобно быть собой настоящей.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="construct">
-        <div class="container">
-            <h2 class="headingM construct__heading">
-                С чем носить?
-            </h2>
-            <div class="construct__wrapper-text">
-                <p class="wrapper-text__content">
-                    Наши конструкторы создают эффектные образы вне трендов.
-                    На свидании или в офисе, в кино
-                    или на прогулке, в путешествии
-                    или во время важной презентации —
-                    в Вязани вы чувствуете себя комфортно и уверенно всегда.
-                </p>
-                <p class="wrapper-text__content">
-                    Наша цветовая палитра — еще один залог беспроигрышного варианта. Она уместна почти для любого случая
-                    и легко вписывается
-                    в гардероб. Одежда остается актуальной вне сезонов и коротких трендов.
-                </p>
-            </div>
-            <div class="construct__look">
-                <a href="#" class="construct__look-text">
-                    <p class="look-text__descr heading">
-                        Готовые образы от Вязани
-                    </p>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="catalog catalog3">
-        <div class="container">
-            <h2 class="catalog__heading heading">
-                Детская коллекция
-            </h2>
-            <div class="catalog__wrapper">
-                <div href="#" class="catalog__wrapper-item item-1">
-                    <img src="img/card4/1.png" alt="card" class="card-img">
-                    <a href="#" class="catalo-item__price mainScreen__products-item">
-                        <p class="products-item__name">
-                            Свитер крупной вязки с аранами
-                        </p>
-                        <p class="products-item__price">
-                            1380₽
-                        </p>
-                    </a>
-                </div>
-                <div href="#" class="catalog__wrapper-item item-2">
-                    <img src="img/card4/2.png" alt="card" class="card-img">
-                    <a href="#" class="catalo-item__price mainScreen__products-item">
-                        <p class="products-item__name">
-                            Свитер
-                        </p>
-                        <p class="products-item__price">
-                            1970₽
-                        </p>
-                    </a>
-                </div>
-                <div href="#" class="catalog__wrapper-item item-3">
-                    <img src="img/card4/3.png" alt="card" class="card-img">
-                    <a href="#" class="catalo-item__price mainScreen__products-item">
-                        <p class="products-item__name">
-                            Свиттер
-                        </p>
-                        <p class="products-item__price">
-                            1400₽
-                        </p>
-                    </a>
-                </div>
-                <div href="#" class="catalog__wrapper-item item-4">
-                    <img src="img/card4/4.png" alt="card" class="card-img">
-                    <a href="#" class="catalo-item__price mainScreen__products-item">
-                        <p class="products-item__name">
-                            Свиттер
-                        </p>
-                        <p class="products-item__price">
-                            1860₽
-                        </p>
-                    </a>
-                </div>
-                <div href="#" class="catalog__wrapper-item item-5">
-                    <img src="img/card4/5.png" alt="card" class="card-img">
-                    <a href="#" class="catalo-item__price mainScreen__products-item">
-                        <p class="products-item__name">
-                            Джемпер
-                        </p>
-                        <p class="products-item__price">
-                            1580₽
-                        </p>
-                    </a>
-                </div>
-                <div class="catalog__wrapper-item item-6">
-                    <img src="img/card4/6.png" alt="card" class="card-img">
-                    <a href="#" class="catalo-item__price mainScreen__products-item">
-                        <p class="products-item__name">
-                            Жилет
-                        </p>
-                        <p class="products-item__price">
-                            980₽
-                        </p>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="care" id="care">
-        <div class="container">
-            <h2 class="headingM construct__heading">
-                Как ухаживать?
-            </h2>
-            <div class="care__wrapper">
-                <div class="care__wrapper-text">
-                    <p class="care__text">
-                        Рекомендуем ознакомиться с информацией
-                        на вшивном ярлыке, чтобы узнать подходящие режимы стирки, отжима, сушки и соблюдать данные
-                        рекомендации по уходу.
-                    </p>
-                    <p class="care__text">
-                        Вещи лучше всего стирать, вывернув наизнанку. Используйте нейтральные моющие средства. Избегайте
-                        длительного замачивания.
-                        Не выкручивайте. Сушите в разложенном виде
-                        и горизонтальном положении.
-                    </p>
-                    <p class="care__text">
-                        При эксплуатации избегайте чрезмерного трения
-                        с сумками и другими аксессуарами, поскольку
-                        это может привести к образованию затяжек
-                        и катышек. Удалять катышки лучше всего специальной щеткой, либо специальной
-                        машинкой для удаления катышков.
-                    </p>
-                    <p class="care__text">
-                        Если вы долго не носите вещь, стоит хранить
-                        её в сложенном виде, поскольку вешалки могут исказить форму изделия.
-                    </p>
-                </div>
-                <div class="care__wrapper-cards">
-                    <div href="#" class="cards-item">
-                        <img src="img/care/brush.png" alt="card" class="catalog-img">
-                        <a href="#" class="mainScreen__products-item care-item">
-                            <p class="products-item__name">
-                                Щетка для удаления катышек
-                            </p>
-                            <p class="products-item__price">
-                                495₽
-                            </p>
-                        </a>
-                    </div>
-                    <div href="#" class="cards-item">
-                        <img src="img/care/gel.png" alt="card" class="catalog-img">
-                        <a href="#" class="mainScreen__products-item care-item">
-                            <p class="products-item__name">
-                                Гель для стирки вещей
-                            </p>
-                            <p class="products-item__price">
-                                760₽
-                            </p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="banner">
-        <div class="container">
-            <div class="banner__wrapper banner__wrapper2">
-                <p class="banner__content banner__content2">
+                <p class="banner__content-text">
                     Лекала, форма, цвет, вязка — мы выверяем всё,
                     чтобы создавать вещи с идеальной посадкой,
                     которые носятся годами.
                 </p>
-                <div class="banner__wrapper2-date">
-                    <p class="banner-date__num banner__content">
-                        21
-                    </p>
-                    <p class="banner-date__day banner__content ">
-                        день
+            </div>
+        </div>
+    </section>
+    <section class="fabricPromo">
+        <div class="container">
+            <div class="fabricPromo__wrapper">
+                <div class="fabricPromo__imgCont">
+                    <img src="img/promo.png" alt="fabric">
+                </div>
+                <div class="fabricPromo__imgCont-rigth">
+                    <p class="fabricPromo__text">
+                        Предоставляем большое преимущество для оптовых, постоянных заказчиков – это гибкая система скидок при каждом последующем заказе. Пошив изделий производится в цехах оснащенных высокотехнологичным оборудованием. 
                     </p>
                 </div>
             </div>
@@ -813,5 +475,4 @@
     </footer>
     <script src="script.js"></script>
 </body>
-
 </html>
